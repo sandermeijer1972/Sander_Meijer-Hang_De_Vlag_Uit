@@ -1,0 +1,278 @@
+body {
+    background-color: #FF3300;
+    color: black;
+    text-align: center;
+}
+
+.head {
+    border: solid 5px #801A00;
+    border-radius: 10px;
+    background-color: #FF9980;
+    padding: 5px 10px;
+    margin: 15px 5px;
+    font-size: 45px;
+    font-family: 'Potta One', cursive;
+}
+
+.menu {
+    border: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size:20px;
+    color: white;
+}
+
+.menu a:link {
+    color: white;
+    text-decoration: none;
+}
+
+.menu a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: yellow;
+    text-decoration: none;
+}
+
+.menu .huidig {
+    padding-bottom: 5px;
+    border-bottom: #801A00 solid 5px;
+}
+
+footer {
+    border: solid 3px #801A00;
+    border-radius: 10px;
+    background-color: #FF9980;
+    padding: 5px 10px;
+    margin: 15px 5px;
+    font-size: 12px;
+}
+
+main {
+    border: solid 2px #801A00;
+    border-radius: 10px;
+    background-color: #FF9980;
+    padding: 5px 10px;
+    margin: 15px 5px;
+}
+
+object {
+    box-sizing: border-box;
+    max-height: 200px;
+    border: double 1px #801A00;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.groot, .groot1 {
+    box-sizing: border-box;
+    max-height: 140px;
+    border: double 1px #801A00;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.klein {
+    box-sizing: border-box;
+    max-height: 120px;
+    border: double 1px #801A00;
+    border-radius: 5px;
+    margin: 5px;    
+}
+
+section, article {
+    text-align: left;
+    border: none;
+    padding: 10px;
+    font-size: 17px;
+}
+
+.filmpje {
+    width: 400px;
+    height: 225px;
+}
+
+.hapjes {
+    text-align: center;
+}
+
+
+.adres {
+    text-align: left;
+    border: none;
+    padding: 30px;
+    font-size: 25px;
+    line-height: 1.5;
+}
+
+.socials {
+    border: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+form {
+    text-align: left;
+    border: solid 2px #801A00;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    font-size: 17px;
+}
+
+textarea {
+    width: 300px;
+    height: 100px;
+}
+
+@media (min-width: 768px) {
+    .head {
+        font-size: 60px;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    section, article {
+        font-size: 20px;
+    }
+    form {
+        font-size: 20px;
+    }
+    .filmpje {
+        width: 600px;
+        height: 337px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .menu {
+        width: 500px;
+        margin: auto;
+    }
+    .vlaggenmast {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, auto);
+        grid-template-areas: 
+        "T0 ."
+        "T1 F12"
+        "F34 T2"
+        "T3 F56"
+        "F71 T5";   
+    }
+    .mast {
+        grid-area: T0;
+    }
+    .tekst1 {
+        grid-area: T1;
+    }
+    .tekst2 {
+        grid-area: T2;
+    }
+    .tekst3-4 {
+        grid-area: T3;
+    }
+    .tekst5 {
+        grid-area: T5;
+    }
+    .img1-2 {
+        grid-area: F12;
+    }
+    .img3-4 {
+        grid-area: F34;
+    }
+    .img5-6 {
+        grid-area: F56;
+    }
+    .img7-10 {
+        grid-area: F71;
+    }
+    .vlaggen {
+        display: grid;
+        grid-gap: 5px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(8, auto);
+        grid-template-areas:
+        "T4 T4"
+        "F11 F11"
+        "T6 F23"
+        "F14 T7"
+        "T8 F16"
+        "T9 T9"
+        "F78 F78"
+        "F91 F91";
+    }
+    .vlag {
+        grid-area: T4;
+    }
+    .img11 {
+        grid-area: F11;
+        max-height: 300px;
+    }
+    .tekst6 {
+        grid-area: T6;
+    }
+    .img12-13 {
+        grid-area: F23;
+    }
+    .tekst7 {
+        grid-area: T7;
+    }
+    .img14 {
+        grid-area: F14;    
+    }
+    .tekst8 {
+        grid-area: T8;
+    }
+    .img15-16 {
+        grid-area: F16;
+    }
+    .tekst9 {
+        grid-area: T9;
+    }
+    .img17-18 {
+        grid-area: F78;
+    }
+    .img19-21 {
+        grid-area: F91;
+        border: none;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .groot1 {
+        max-height: 200px;
+    }
+    .gegevens {
+        text-align: left;
+        border: solid 2px #801A00;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 10px;
+        font-size: 20px;        
+    }
+    .ctctpag {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+    .formulier {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .gegevens {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    textarea {
+        width: 420px;
+    }
+}
